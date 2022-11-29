@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    background-color: rgb(233, 230, 230);
+}
+ul {
+    list-style: none;
+}
+/*----------- Start Header ---------*/
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.header ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+.logo {
+    cursor: pointer;
+}
+.contact {
+    font-size: 1.3rem;
+    color: #eee;
+}
+/*----------- Start Home ---------*/
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.49);
+    background-image: url('./images/erwi-lo-L2XHKNu8-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: grayscale(1); */
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 20%;
+}
+.home img {
+    margin-top: -25px;
+    width: 300px;
+}
+/*----------- featured ----------*/
+.featured img {
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.607));
+}
+/*----------- features ---------*/
+.features {
+    height: 90vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.features h2 {
+    color: #555;
+}
+/*------------- Swiper js ------------*/
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: inherit;
+    border-radius: 15px;
+  }
+
+  @media screen and (max-width: 786px) {
+    .home h1 {
+        font-size: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .home h1 {
+        font-size: 2rem;
+    }
+    .home img {
+        width: 200px;
+    }
+  }
